@@ -27,10 +27,13 @@ const handleSubmit = (event) =>
         onChange={handleChange}
         />
       </label>
-      <button data-testid="buttonElement">
-
+      <button data-testid="buttonElement"
+      type="submit"
+      >
+        Say Hello
       </button>
       </form>
+      {greeting ? <h2>{greeting}</h2>:<></>}
     </div>
   );
 }
